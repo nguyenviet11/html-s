@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container__logo">
+        <div class="container__logo-img">
+            <img src="https://opms.ntq.solutions/web/binary/company_logo?db=opms11&company=1" alt="logo">
+        </div>
+        <div class="container__logo-text">
+            <a href="#">Employees</a>
+            <div class="text__item">
+                <a href="#">
+                    <p>Employees</p>
+                </a>
+                <a href="#">
+                    <p>Employees</p>
+                </a>
+                <a href="#">
+                    <p>Employees</p>
+                </a>
+            </div>
+            <a href="">Department</a>
+            <a href="#">Terminaitonl</a>
+        </div>
+    </div>
+    <div class="container__nav">
+        <div class="container__nav-text">
+            <h2>Employees</h2>
+            <div class="text-create">
+                <form class="modal__create">
+                    <input type="text" placeholder="Ten nv .." class="input_name" />
+                    <input type="text" placeholder="Vi tri " class="input_job" />
+                    <button>ADD</button>
+                </form>
+            </div>
+        </div>
+        <div class="container__nav-seacrh">
+            <div class="search__input">
+                <input type="text" placeholder="seach.." id="search" oninput="search()" />
+                <button>
+                    <i class="fa-solid fa-magnifying-glass-plus search__input-item " id="icon-search"></i>
+                </button>
+            </div>
+
+            <div class="search__pagination">
+                <div class="search__paginaiton-filter">
+                    <select onchange="sort()" id="cars">
+                        <option style="display: none;">Filter</option>
+                        <option value="sortaz">Ten A-Z</option>
+                        <option value="sortbz">Ten Z-A</option>
+                    </select>
+                </div>
+
+                <div class="search__pagination">
+                    <p class="search__pagination-number">1-40/160</p>
+                    <div class="search__pagination-btn">
+                        <button class="btn__prev"> <i class="fa-solid fa-angle-left "></i></button>
+                        <button class="btn__next"><i class="fa-solid fa-angle-right "></i></button>
+                    </div>
+                    <div class="search__pagination-btn">
+                        <button><i class="fa-solid fa-table"></i> </button>
+                        <button><i class="fa-solid fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container__content">
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
